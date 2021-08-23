@@ -26,8 +26,4 @@ In the second terminal go in the folder of CoppeliaSim_Edu_V4_2_0_Ubuntu20_04 an
 - ./coppeliaSim.sh
 
 Once the CoppeliaSim software started in order to open the correct scene go in File, upper left corner, Open scene and select the scene "prova_scene.ttt" (that is inside the package cloned).
-Then press the "Play" button in the CoppeliaSim software and, when the simulation has started, start to move the robot.
-
-# Robot Behaviour
-
-The robot waits for the user command to start the motion. Once the robot starts it goes to the first random position and orientation. If the user calls the stop command the robot will stop as soon as it reaches the goal. If the start command is called again the robot will start moving in towards a new goal.
+Then press the "Play" button in the CoppeliaSim software and, when the simulation has started, start to move the robot, pressing (from the first terminal opened) "1" to start the motion to a random position and orientation, or "0" to stop the robot as soon as it reaches the goal.
