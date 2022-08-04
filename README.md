@@ -2,7 +2,7 @@
 
 The purpose of the assignment is to develop a simulation of a robot in a 2-dimensional environment, using the CoppeliaSim simulator. The adopted robot corresponds to the Pioneer P3-DX.
 
-The package is composed of four nodes and three servers: the nodes are [go_to_point](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/scripts/go_to_point.py), [user_interface](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/scripts/user_interface.py), [position_service](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/src/position_service.cpp), [state_machine](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/src/state_machine.cpp); the servers are [Command](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/srv/Command.srv), [RandomPosition](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/srv/RandomPosition.srv) and [Position](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/srv/Position.srv).
+The package is composed of four nodes and three servers. The nodes are [go_to_point](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/scripts/go_to_point.py), [user_interface](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/scripts/user_interface.py), [position_service](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/src/position_service.cpp), [state_machine](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/src/state_machine.cpp). The servers are [Command](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/srv/Command.srv), [RandomPosition](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/srv/RandomPosition.srv) and [Position](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/srv/Position.srv).
 
 As already said, the node [go_to_point](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/scripts/go_to_point.py) implements a server: when it is called it receives a request to reach a point with a given orientation. On top, it implements the algorithm to control the robot.
 The node [user_interface](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/scripts/user_interface.py) reads the inputs given by the user: depending on the input received, it can recall the go_to_point service.
@@ -13,7 +13,7 @@ Regarding the simulation, it is possible to find the ["prova_scene.ttt"](https:/
 
 # How to Run
 
-Verify that you have installed ROS Noetic. Create a ROS Workspace and clone this ROS package inside it:
+Verify that you have installed ROS Noetic. Create a ROS Workspace and clone this ROS package inside it
 
 ```
 git clone -b main https://github.com/RiccardoZuppetti/RT2-Assignment1.git rt2_assignment1
