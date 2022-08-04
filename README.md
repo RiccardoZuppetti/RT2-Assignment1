@@ -13,7 +13,13 @@ Regarding the simulation, it is possible to find the ["prova_scene.ttt"](https:/
 
 # How to Run
 
-Verify that you have installed ROS Noetic. Create a ROS Workspace and clone this ROS package inside it. Then build the workspace using the `catkin_make` command.
+Verify that you have installed ROS Noetic. Create a ROS Workspace and clone this ROS package inside it:
+
+```
+git clone -b main https://github.com/RiccardoZuppetti/RT2-Assignment1.git rt2_assignment1
+```
+
+Then build the workspace using the `catkin_make` command.
 
 Modify the `.bashrc` file, using the command `gedit ~/.bashrc`, sourcing the ROS environment, the ROS workspace and exporting the correct directory of `CoppeliaSim_Edu_V4_2_0_Ubuntu20_04`.
 
