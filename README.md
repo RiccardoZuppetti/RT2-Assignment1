@@ -1,6 +1,6 @@
 # Research Track II - First Assignment
 
-The purpose of the assignment is to develop a simulation of a robot in a 3-dimensional environment, using the CoppeliaSim simulator. The adopted robot corresponds to the Pioneer P3-DX.
+The purpose of the assignment is to develop a simulation of a robot in a 2-dimensional environment, using the CoppeliaSim simulator. The adopted robot corresponds to the Pioneer P3-DX.
 
 The package is composed of four nodes and three servers: the nodes are [go_to_point](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/scripts/go_to_point.py), [user_interface](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/scripts/user_interface.py), [position_service](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/src/position_service.cpp), [state_machine](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/src/state_machine.cpp); the servers are [Command](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/srv/Command.srv), [RandomPosition](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/srv/RandomPosition.srv) and [Position](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/srv/Position.srv).
 
