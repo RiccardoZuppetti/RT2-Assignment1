@@ -7,7 +7,7 @@ This branch contains the same content of the main one, with the difference that 
 - then, it moves in a straight direction towards the goal
 - once the goal is reached, the robot rotates itself according to the provided random orientation. 
 
-The node [user_interface](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/action/scripts/user_interface.py) reads the inputs given by the user: depending on the input received it can recall the go_to_point service, through which the robot can perform a motion or can immediately stop if the user want to stop the robot.
+The node [user_interface](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/action/scripts/user_interface.py) reads the inputs given by the user: depending on the input received it can recall the go_to_point service, through which the robot can perform a motion or can immediately stop if the user wants to stop the robot.
 
 The node [position_service](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/action/src/position_service.cpp) implements a server that receives as input a feasible pose of the robot: since the considered space has two dimensions, it receives an x-coordinate, a y-coordinate and an orientation theta, in which the point (x, y) and the orientation are chosen among a certain range of values.
 
