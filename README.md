@@ -66,7 +66,7 @@ To run this project it is necessary to open three terminals.
 In the first one `source ros.sh`, move to the ROS workspace and digit
 
 ```
-roslaunch rt2_assignment sim_ros.launch
+roslaunch rt2_assignment sim.launch
 ```
 
 In the second one `source ros12.sh`, move to the ROS2 workspace and digit
