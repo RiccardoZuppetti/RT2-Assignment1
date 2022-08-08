@@ -5,7 +5,7 @@ import rospy
 from geometry_msgs.msg import Twist, Point
 from nav_msgs.msg import Odometry
 from tf import transformations
-from rt2_assignment1.srv import Position
+from rt2_assignment1 import Position
 import math
 
 # robot state variables
