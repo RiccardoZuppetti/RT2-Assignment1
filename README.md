@@ -1,4 +1,4 @@
-# Research Track II - First Assignment
+# Research Track II - First Assignment - VREP
 
 The purpose of the assignment is to develop a simulation of a robot in a 2-dimensional environment, using the CoppeliaSim simulator. The adopted robot corresponds to the Pioneer P3-DX.
 
