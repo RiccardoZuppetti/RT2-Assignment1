@@ -8,7 +8,7 @@ The component [state_machine](https://github.com/RiccardoZuppetti/RT2-Assignment
 
 # How to Run
 
-Clone this ROS package inside your ROS workspace
+Inside your ROS workspace clone this ROS package
 
 ```
 git clone -b temp https://github.com/RiccardoZuppetti/RT2-Assignment1.git rt2_assignment
