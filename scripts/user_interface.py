@@ -1,6 +1,6 @@
 import rospy
 import time
-from rt2_assignment1.srv import Command
+from rt2_assignment.srv import Command
 
 def main():
     rospy.init_node('user_interface')
