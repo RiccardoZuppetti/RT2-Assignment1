@@ -1,4 +1,4 @@
-# Research Track II - First Assignment - ROS2 branch
+# Research Track II - First Assignment - ROS2 Branch
 
 This package contains two components written in ROS2, [position_service](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/ros2/src/position_service.cpp) and [state_machine](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/ros2/src/state_machine.cpp).
 
