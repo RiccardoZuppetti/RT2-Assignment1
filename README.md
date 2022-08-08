@@ -1,15 +1,10 @@
-# Research Track II - First Assignment
+# Research Track II - First Assignment - Ros2 branch
 
-The purpose of the assignment is to develop a simulation of a robot in a 2-dimensional environment, using the CoppeliaSim simulator. The adopted robot corresponds to the Pioneer P3-DX.
+This package contains two nodes written in ROS2, [position_service](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/ros2/src/position_service.cpp) and [state_machine](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/ros2/src/state_machine.cpp).
 
-The package is composed of four nodes and three servers. The nodes are [go_to_point](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/scripts/go_to_point.py), [user_interface](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/scripts/user_interface.py), [position_service](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/src/position_service.cpp), [state_machine](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/src/state_machine.cpp). The servers are [Command](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/srv/Command.srv), [RandomPosition](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/srv/RandomPosition.srv) and [Position](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/srv/Position.srv).
+The node [position_service](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/ros2/src/position_service.cpp) implements a server that replies as response a feasible pose of the robot: since the considered space has two dimensions, the client that requests this service receives an x-coordinate, a y-coordinate and an orientation theta, in which the point (x, y) and the orientation are chosen among a certain range of values.
 
-As already said, the node [go_to_point](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/scripts/go_to_point.py) implements a server: when it is called it receives a request to reach a point with a given orientation. On top, it implements the algorithm to control the robot.
-The node [user_interface](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/scripts/user_interface.py) reads the inputs given by the user: depending on the input received, it can recall the go_to_point service.
-The node [position_service](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/src/position_service.cpp) implements a server that receives as input a feasible pose of the robot: since the considered space has two dimensions, it receives an x-coordinate, a y-coordinate and an orientation theta, in which the point (x, y) and the orientation are chosen among a certain range of values.
-The node [state_machine](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/src/state_machine.cpp) implements the server for the user_interface client. On top, it also implements a client for both the position_server and the go_to_point.
-
-Regarding the simulation, it is possible to find the ["prova_scene.ttt"](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/main/prova_scene.ttt) scene, that implements the robot simulation in CoppeliaSim. Referring to the associated script, it is possible to notice a publisher to the `/odom` topic, on which the current position of the robot is published. The node go_to_point subscribes to this topic. A subscriber to the `/cmd_vel` topic is declared, topic on which it is possible to retrieve the velocities of the two wheels of the robot: as soon as new data are available on the `/cmd_vel` topic, there is a "velocity" function that sets, using the differential form, the velocities of the wheels of the used model.
+The node [state_machine](https://github.com/RiccardoZuppetti/RT2-Assignment1/blob/ros2/src/state_machine.cpp) implements the server for the user_interface client. On top, it also implements a client for both the position_server and the go_to_point.
 
 # How to Run
 
