@@ -51,7 +51,7 @@ source /root/<name_of_your_ros_workspace>/devel/setup.bash
 ```
 nano ros2.sh
 #!/bin/bash
-source /root/<name_of_your_ros2_workspace>/devel/setup.bash
+source /root/<name_of_your_ros2_workspace>/install/setup.bash
 ```
 
 ```
