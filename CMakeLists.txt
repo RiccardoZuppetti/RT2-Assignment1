@@ -46,7 +46,7 @@ EXECUTABLE comp_stateMachine)
 
 ament_target_dependencies(state_machine rclcpp std_msgs example_interfaces rclcpp_components)
 
-add_library(position_server SHARED src/position_server.cpp)
+add_library(position_server SHARED src/position_service.cpp)
 
 rclcpp_components_register_node(position_server
 PLUGIN "rt2_assignment1::PositionService"
