@@ -78,7 +78,7 @@ ros2 run ros1_bridge dynamic_bridge
 In the last terminal `source ros2.sh`, move to the ROS2 workspace and digit
 
 ```
-ros2 run rt2_assignment1 sim_launch.py
+ros2 launch rt2_assignment1 sim_launch.py
 ```
 
 # Robot behaviour
