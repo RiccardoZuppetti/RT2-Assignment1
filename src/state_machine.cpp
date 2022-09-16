@@ -107,7 +107,6 @@ class FSM : public rclcpp::Node
 			
 			void timer_callback()
 				{
-					//auto goal_position = std::make_shared<GoalPositionClient>();
 					auto random_position = std::make_shared<RndPos::Request>();
 					// if I am executing the timer_callback right after 
 					// one request was served I do nothing
